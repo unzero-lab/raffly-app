@@ -22,10 +22,16 @@ module.exports = {
     ecmaFeatures: {
       jsx: true,
     },
+    project: './tsconfig.json',
   },
   rules: {
     'prettier/prettier': 'error',
     'react/prop-types': 'off', // If you don't want to use prop-types
     'react-native/no-inline-styles': 'off', // If you want to use inline styles
+    '@typescript-eslint/consistent-type-definitions': 'off',
+    '@typescript-eslint/strict-boolean-expressions': 'off',
+    '@typescript-eslint/no-floating-promises': 'off',
+    '@typescript-eslint/no-namespace': 'off',
+    '@typescript-eslint/return-await': 'off',
   },
 }
