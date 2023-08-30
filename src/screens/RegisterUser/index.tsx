@@ -1,3 +1,10 @@
+import { Container } from "./style";
+import {Text} from "react-native"
+
 export function Registeruser() {
-  return <h1>cadastrese</h1>
+  return (
+    <Container>
+        <Text>Teste</Text>
+    </Container>
+  )
 }

@@ -1,20 +1,16 @@
-import { StatusBar } from 'expo-status-bar'
-import { StyleSheet, Text, View } from 'react-native'
+import {ActivityIndicator} from "react-native"
+import { ThemeProvider } from 'styled-components'
+import {useFonts, Rubik_400Regular, Rubik_700Bold, Rubik_500Medium} from "@expo-google-fonts/rubik"
+
+import theme from './src/theme'
+import { Registeruser } from '@screens/RegisterUser'
 
 export default function App() {
+  const [fontsLoaded] = useFonts({Rubik_400Regular, Rubik_700Bold, Rubik_500Medium})
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <ThemeProvider theme={theme} >
+     {fontsLoaded ? <Registeruser/> : <ActivityIndicator />}
+    </ThemeProvider>
   )
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-})
