@@ -6,14 +6,12 @@ export type Props = TextInputProps & {
   icon?: string
 }
 
-export function Input({ icon = 'search', ...rest }: Props) {
+export function Input({ icon, ...rest }: Props) {
   const { COLORS } = useTheme()
-
-  // return <Container {...rest} placeholderTextColor={COLORS.GRAY_400} />
 
   return (
     <InputWithIconContainer>
-      <Icon name={icon} size={20} color={COLORS.GRAY_400} />
+      {icon && <Icon name={icon} size={20} color={COLORS.GRAY_400} />}
       <Container {...rest} placeholderTextColor={COLORS.GRAY_400} />
     </InputWithIconContainer>
   )
