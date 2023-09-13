@@ -44,3 +44,13 @@ export const ForgoutPassword = styled(LinkText).attrs({
 } as LinkTextStyleProps)`
   flex: 1;
 `
+
+export const BottomText = styled.View`
+  ${({ theme }) => css`
+    flex-direction: row;
+    background-color: ${({ theme }) => theme.COLORS.GRAY_100};
+    justify-content: center;
+    align-items: center;
+    padding: 43px;
+  `}
+`

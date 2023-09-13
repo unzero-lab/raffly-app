@@ -1,12 +1,14 @@
-import { KeyboardAvoidingView, Platform, View } from 'react-native'
+import { KeyboardAvoidingView, Platform, Text, View } from 'react-native'
 import { CheckBox } from '@/components/CheckBox'
 import { LinkText } from '@/components/LinkText'
 import { Button } from '@/components/Button'
 import { Input } from '@/components/Input'
+import theme from '@/theme'
 import {
   ForgoutPassword,
   BetweenContent,
   HighlightText,
+  BottomText,
   BrandName,
   Container,
 } from '@/screens/Login/styles'
@@ -43,6 +45,10 @@ export function Login() {
 
         <Button label="Entrar" />
       </Container>
+      <BottomText>
+        <Text style={{ fontSize: theme.FONT_SIZE.MD }}>Ainda não tem uma conta? </Text>
+        <LinkText>Cadastre-se</LinkText>
+      </BottomText>
     </KeyboardAvoidingView>
   )
 }
