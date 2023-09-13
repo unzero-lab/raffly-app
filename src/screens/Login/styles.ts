@@ -36,7 +36,7 @@ export const BetweenContent = styled.View`
   margin-bottom: 42px;
 `
 
-export const RememberPassword = styled(LinkText).attrs({
+export const ForgoutPassword = styled(LinkText).attrs({
   color: 'TEXT',
   textAlign: 'left',
   underline: true,

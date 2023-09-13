@@ -1,14 +1,15 @@
-import {
-  BetweenContent,
-  BrandName,
-  Container,
-  HighlightText,
-  RememberPassword,
-} from '@/screens/Login/styles'
 import { KeyboardAvoidingView, Platform, View } from 'react-native'
+import { CheckBox } from '@/components/CheckBox'
 import { LinkText } from '@/components/LinkText'
 import { Button } from '@/components/Button'
 import { Input } from '@/components/Input'
+import {
+  ForgoutPassword,
+  BetweenContent,
+  HighlightText,
+  BrandName,
+  Container,
+} from '@/screens/Login/styles'
 
 export function Login() {
   return (
@@ -36,11 +37,8 @@ export function Login() {
         />
 
         <BetweenContent>
-          <RememberPassword>Esqueceu a senha?</RememberPassword>
-
-          <LinkText textAlign="right" style={{ flex: 1 }} color="TEXT" fontSize="SM">
-            Lembre-me
-          </LinkText>
+          <ForgoutPassword>Esqueceu a senha?</ForgoutPassword>
+          <CheckBox label="Lembrar-me" />
         </BetweenContent>
 
         <Button label="Entrar" />
