@@ -3,7 +3,13 @@ export default {
         WHITE: "#ffffff",
 
         GRAY_100: "#F7F7F7",
+        GRAY_200: "#E2E8F0",
+        GRAY_300: "#CBD5E0",
+        GRAY_400: "#A0AEC0",
+        GRAY_500: "#718096",
         GRAY_600: "#A0AEC0",
+        GRAY_700: "#4A5568",
+        GRAY_800: "#2D3748",
 
         GREEN_400: "#1BAC4B",
 
@@ -12,7 +18,7 @@ export default {
 
     FONT_FAMILY: {
         REGULAR: 'Rubik_400Regular',
-        MADIUM: 'Rubik_500Medium',
+        MEDIUM: 'Rubik_500Medium',
         BOLD: 'Rubik_700Bold'
     },
 
