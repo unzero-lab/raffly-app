@@ -1,3 +1,4 @@
+import { LinkText, LinkTextStyleProps } from '@/components/LinkText'
 import styled, { css } from 'styled-components/native'
 
 export const Container = styled.View`
@@ -26,4 +27,20 @@ export const HighlightText = styled.Text`
     text-align: center;
     margin-bottom: 30px;
   `}
+`
+
+export const BetweenContent = styled.View`
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 42px;
+`
+
+export const RememberPassword = styled(LinkText).attrs({
+  color: 'TEXT',
+  textAlign: 'left',
+  underline: true,
+  fontSize: 'SM',
+} as LinkTextStyleProps)`
+  flex: 1;
 `

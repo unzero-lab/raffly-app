@@ -18,7 +18,7 @@ export default {
 
     FONT_FAMILY: {
         REGULAR: 'Rubik_400Regular',
-        MADIUM: 'Rubik_500Medium',
+        MEDIUM: 'Rubik_500Medium',
         BOLD: 'Rubik_700Bold'
     },
 

@@ -20,7 +20,7 @@ export const Container = styled.TouchableOpacity<ButtonStyleProps>`
 
 export const Text = styled.Text`
   ${({ theme }) => css`
-    font-family: ${theme.FONT_FAMILY.MADIUM};
+    font-family: ${theme.FONT_FAMILY.MEDIUM};
     font-size: ${theme.FONT_SIZE.MD}px;
     color: ${theme.COLORS.WHITE};
   `}
