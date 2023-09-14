@@ -1,6 +1,6 @@
 import { ThemeProvider } from 'styled-components/native'
-import { Registeruser } from '@/screens/RegisterUser'
 import { ActivityIndicator } from 'react-native'
+import { Register } from '@/screens/Register'
 import { Login } from '@/screens/Login'
 import theme from '@/theme'
 import {
@@ -13,6 +13,8 @@ import {
 export default function App() {
   const [fontsLoaded] = useFonts({ Rubik_400Regular, Rubik_700Bold, Rubik_500Medium })
   return (
-    <ThemeProvider theme={theme}>{fontsLoaded ? <Login /> : <ActivityIndicator />}</ThemeProvider>
+    <ThemeProvider theme={theme}>
+      {fontsLoaded ? <Register /> : <ActivityIndicator />}
+    </ThemeProvider>
   )
 }
