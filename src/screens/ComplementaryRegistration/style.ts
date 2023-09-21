@@ -30,19 +30,17 @@ export const Form = styled.View`
 `
 
 export const FormStyle = styled.View`
-flex-direction: row; /* Colocar os filhos lado a lado */
-  justify-content: space-between; /* Espaço uniformemente entre os filhos */
+flex-direction: row; 
+  justify-content: space-between; 
   gap: 5px;
 `
 
 export const FirstColumn = styled.View`
-  flex: 7; /* 70% do espaço disponível */
-  /* Adicione estilos adicionais para a primeira coluna aqui */
+  flex: 7; 
 `;
 
 export const SecondColumn = styled.View`
-  flex: 3; /* 30% do espaço disponível */
-  /* Adicione estilos adicionais para a segunda coluna aqui */
+  flex: 3;
 `;
 
 export const ContainerButton = styled.View`

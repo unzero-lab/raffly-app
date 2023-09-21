@@ -9,7 +9,6 @@ export type Props = TextInputProps & {
 
 export function Input({ icon, ...rest }: Props) {
   const { COLORS } = useTheme()
-  console.log(rest)
 
   return (
     <InputWithIconContainer>

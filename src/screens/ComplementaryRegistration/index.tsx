@@ -1,8 +1,8 @@
-import { Keyboard, KeyboardAvoidingView, Platform, ScrollView} from "react-native";
-import {  BrandName, ButtonImage, Container, ContainerButton, FirstColumn, Form, FormStyle, Logo, SecondColumn } from "./style";
+import { Keyboard, KeyboardAvoidingView, Platform, ScrollView} from 'react-native'
+import {  BrandName, ButtonImage, Container, ContainerButton, FirstColumn, Form, FormStyle, Logo, SecondColumn } from './style';
 import Avatar from '@/assets/Avatar.png'
-import { Input } from "@/components/Input";
-import { Button } from "@/components/Button";
+import { Input } from '@/components/Input'
+import { Button } from '@/components/Button'
 
 
 export function ComplementaryRegistration(){
