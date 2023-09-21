@@ -20,15 +20,17 @@ export const InputWithIconContainer = styled.View`
   height: 48px;
   padding-left: 16px;
   margin-bottom: 16px;
+  width: 100%;
 `
 
 export const Container = styled(TextInput)`
   ${({ theme }) => css`
   flex: 1;
-  font-family: ${({ theme }) => theme.FONT_FAMILY.REGULAR};
-  font-size: ${({ theme }) => theme.FONT_SIZE.MD}px;
-  color: ${({ theme }) => theme.COLORS.TEXT};
+  font-family: ${theme.FONT_FAMILY.REGULAR};
+  font-size: ${theme.FONT_SIZE.MD}px;
+  color: ${theme.COLORS.TEXT};
   `}
+  
 `
 
 export const Icon = styled(Octicons).attrs<Props>(({ theme, color, name }) => ({

@@ -9,12 +9,13 @@ import {
   Rubik_700Bold,
   useFonts,
 } from '@expo-google-fonts/rubik'
+import { ComplementaryRegistration } from '@/screens/ComplementaryRegistration'
 
 export default function App() {
   const [fontsLoaded] = useFonts({ Rubik_400Regular, Rubik_700Bold, Rubik_500Medium })
   return (
     <ThemeProvider theme={theme}>
-      {fontsLoaded ? <Register /> : <ActivityIndicator />}
+      {fontsLoaded ? <ComplementaryRegistration/> : <ActivityIndicator />}
     </ThemeProvider>
   )
 }
