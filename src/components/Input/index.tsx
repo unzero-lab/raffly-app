@@ -4,10 +4,12 @@ import { TextInputProps } from 'react-native'
 
 export type Props = TextInputProps & {
   icon?: string
+  width?: string
 }
 
 export function Input({ icon, ...rest }: Props) {
   const { COLORS } = useTheme()
+  console.log(rest)
 
   return (
     <InputWithIconContainer>

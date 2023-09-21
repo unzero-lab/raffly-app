@@ -20,6 +20,7 @@ export const InputWithIconContainer = styled.View`
   height: 48px;
   padding-left: 16px;
   margin-bottom: 16px;
+  width: 100%;
 `
 
 export const Container = styled(TextInput)`
@@ -29,6 +30,7 @@ export const Container = styled(TextInput)`
   font-size: ${({ theme }) => theme.FONT_SIZE.MD}px;
   color: ${({ theme }) => theme.COLORS.TEXT};
   `}
+  
 `
 
 export const Icon = styled(Octicons).attrs<Props>(({ theme, color, name }) => ({
