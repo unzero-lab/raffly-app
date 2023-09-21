@@ -8,11 +8,12 @@ export type IconProps = {
 export const Container = styled.View`
   ${({ theme }) => css`
     background-color: ${theme.COLORS.WHITE};
-    height: 80px;
+    height: 70px;
     width: 100%;
     flex-direction: row;
     justify-content: space-evenly
     align-items: center;
+    padding: 10px 0 30px;
   `}
 `
 export const ResultIcon = styled(Octicons).attrs<IconProps>(({ theme, focused }) => ({
