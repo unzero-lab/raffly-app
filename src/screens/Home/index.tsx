@@ -5,6 +5,7 @@ import { Header } from '@/components/Header'
 import { Input } from '@/components/Input'
 import { Text } from 'react-native'
 import { useState } from 'react'
+import { Card } from '@/components/Card'
 
 export function Home() {
   const itemsMock: ItemProps[] = [
@@ -84,6 +85,12 @@ export function Home() {
       <Header />
       <Content>
         <Input placeholder="Pesquise" value={search} onChangeText={setSearch} />
+        <Card
+          image="https://picsum.photos/200/300"
+          title="Sorteio 1"
+          subtitle="Resultado 20/09/2023"
+          description="Confira o ganhador"
+        />
         <ItemList sectionTitle="Resultados" items={items} />
       </Content>
       <Navbar />
