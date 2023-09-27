@@ -1,3 +1,4 @@
+import { TouchableOpacityProps } from 'react-native'
 import { Container, Subtitle, Description, Image, Title, ImageContainer } from './styles'
 
 type CardProps = {
@@ -5,11 +6,11 @@ type CardProps = {
   subtitle: string
   description?: string
   image?: string
-}
+} & TouchableOpacityProps
 
-export function Card({ title, subtitle, image, description }: CardProps) {
+export function Card({ title, subtitle, image, description, ...rest }: CardProps) {
   return (
-    <Container>
+    <Container {...rest}>
       <ImageContainer>
         {image && <Image source={{ uri: image }} />}
         <Title>{title}</Title>

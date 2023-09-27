@@ -8,10 +8,10 @@ export type NotificationProps = {
 
 export const Container = styled.View`
   ${({ theme }) => css`
-    height: 115px;
+    height: 65px;
     background-color: ${theme.COLORS.GREEN_400};
     justify-content: space-between;
-    padding: 49px 25px 0 25px;
+    padding: 0 25px ;
     flex-direction: row;
     align-items: center;
     width: 100%;

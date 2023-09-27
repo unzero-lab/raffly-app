@@ -1,4 +1,4 @@
-import { Text, TouchableOpacity } from 'react-native'
+import { TouchableOpacity } from 'react-native'
 import { Container, ListIcon, PlusIcon, ResultIcon } from './styles'
 
 export function Navbar() {

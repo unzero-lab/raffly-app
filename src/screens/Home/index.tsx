@@ -1,11 +1,11 @@
 import { ItemList, ItemProps } from '@/components/ItemList'
+import { useNavigation } from '@react-navigation/native'
 import { Container, Content } from './styles'
 import { Navbar } from '@/components/Navbar'
 import { Header } from '@/components/Header'
 import { Input } from '@/components/Input'
-import { Text } from 'react-native'
-import { useState } from 'react'
 import { Card } from '@/components/Card'
+import { useState } from 'react'
 
 export function Home() {
   const itemsMock: ItemProps[] = [
@@ -80,6 +80,11 @@ export function Home() {
   const [search, setSearch] = useState('')
   const [items, setItems] = useState<ItemProps[]>(itemsMock)
 
+  const navigation = useNavigation()
+  function handleNavigateToResult() {
+    navigation.navigate('login')
+  }
+
   return (
     <Container>
       <Header />
@@ -90,6 +95,7 @@ export function Home() {
           title="Sorteio 1"
           subtitle="Resultado 20/09/2023"
           description="Confira o ganhador"
+          onPress={handleNavigateToResult}
         />
         <ItemList sectionTitle="Resultados" items={items} />
       </Content>

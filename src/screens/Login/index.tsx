@@ -12,8 +12,14 @@ import {
   BrandName,
   Container,
 } from '@/screens/Login/styles'
+import { useNavigation } from '@react-navigation/native'
 
 export function Login() {
+  const navigation = useNavigation()
+  function handleNavigateToRegister() {
+    navigation.navigate('register')
+  }
+
   return (
     <KeyboardAvoidingView
       style={{ flex: 1 }}
@@ -47,7 +53,7 @@ export function Login() {
       </Container>
       <BottomText>
         <Text style={{ fontSize: theme.FONT_SIZE.MD }}>Ainda não tem uma conta? </Text>
-        <LinkText>Cadastre-se</LinkText>
+        <LinkText onPress={handleNavigateToRegister}>Cadastre-se</LinkText>
       </BottomText>
     </KeyboardAvoidingView>
   )
