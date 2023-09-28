@@ -1,5 +1,7 @@
 import { SafeAreaView } from 'react-native-safe-area-context'
 import styled, { css } from 'styled-components/native'
+import { ScrollView } from 'react-native'
+import theme from '@/theme'
 
 export const Container = styled(SafeAreaView)`
   ${({ theme }) => css`
@@ -8,10 +10,15 @@ export const Container = styled(SafeAreaView)`
   `}
 `
 
-export const Content = styled.View`
-  flex: 1;
-  justify-content: center;
-  background-color: ${({ theme }) => theme.COLORS.GRAY_100};
-  align-items: center;
-  padding: 20px 25px 0 25px;
-`
+export const Content = styled(ScrollView).attrs({
+  showsVerticalScrollIndicator: false,
+})``
+
+export const ContentStyle = {
+  flex: 1,
+  backgroundColor: theme.COLORS.GRAY_100,
+  paddingTop: 20,
+  paddingRight: 25,
+  paddingBottom: 0,
+  paddingLeft: 25,
+}
