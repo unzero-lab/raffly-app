@@ -1,6 +1,6 @@
 import { ItemList, ItemProps } from '@/components/ItemList'
+import { Container, Content, ContentStyle } from './styles'
 import { useNavigation } from '@react-navigation/native'
-import { Container, Content } from './styles'
 import { Navbar } from '@/components/Navbar'
 import { Header } from '@/components/Header'
 import { Input } from '@/components/Input'
@@ -88,7 +88,7 @@ export function Home() {
   return (
     <Container>
       <Header />
-      <Content>
+      <Content style={ContentStyle}>
         <Input placeholder="Pesquise" value={search} onChangeText={setSearch} />
         <Card
           image="https://picsum.photos/200/300"
